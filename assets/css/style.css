@@ -426,6 +426,11 @@ footer svg{
 
 .endereco-area > div{
 	display: flex;
+	align-items: center;
+}
+
+address{
+	margin: 0;
 }
 
 
@@ -526,5 +531,54 @@ footer svg{
 		width: 100%;
 		display: flex;
 		justify-content: center;
+	}
+}
+
+@media screen and (max-width: 550px){
+	.hero{
+		padding: 30px 0;
+	}
+
+	.hero .container{
+		align-items: flex-end;
+	}	
+
+	.colecao-destaque{
+		background-position: -150px 0px;
+	}
+
+	.beneficios{
+		padding: 20;
+	}
+
+	.beneficios .container{
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.beneficio:not( :last-child ){
+		margin-bottom: 20px;
+	}
+
+	.gallery{
+		grid-template-columns: 100%;
+	}
+
+	.contato{
+		flex-direction: column;		
+	}
+
+	.contato h3{
+		font-size: 1.rem;
+	}
+
+	.contato ul li,
+	address{
+		font-size: 0.8rem;
+	}
+
+	.copy{
+		font-size: 0.7rem;
 	}
 }
