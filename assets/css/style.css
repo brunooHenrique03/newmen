@@ -230,6 +230,11 @@ h2{
 	justify-content: space-between;
 }
 
+.card-colecao:nth-child(even){
+	background-color: #F2F2F2;
+	border-radius: 8px;
+}
+
 .colecao-destaque--descricao{
 	text-align: center;
 	font-family: 'Bebas Neue', sans-serif;
@@ -541,6 +546,7 @@ address{
 
 	.hero .container{
 		align-items: flex-end;
+		justify-content: center;
 	}	
 
 	.colecao-destaque{
@@ -576,6 +582,10 @@ address{
 	.contato ul li,
 	address{
 		font-size: 0.8rem;
+	}
+
+	.telefone-area{
+		margin-bottom: 15px;
 	}
 
 	.copy{
