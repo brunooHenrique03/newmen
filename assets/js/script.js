@@ -19,3 +19,24 @@ document.addEventListener('click', (e) => {
         navMenu.classList.remove('active');
     }
 });
+
+
+
+function revealCards() {
+    const cards = document.querySelectorAll('.section-hide');
+    
+    cards.forEach(card => {
+        const cardTop = card.getBoundingClientRect().top;
+        const cardVisible = 150; // Quando começar a aparecer
+        
+        if (cardTop < window.innerHeight - cardVisible) {
+            card.classList.add('visible');
+        }
+    });
+}
+
+// Escuta o scroll
+window.addEventListener('scroll', revealCards);
+
+// Checa quando a página carrega
+window.addEventListener('load', revealCards);
